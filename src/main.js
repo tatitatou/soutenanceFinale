@@ -7,6 +7,7 @@ import { createPinia } from 'pinia'
 // Vuetify
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
+import 'vuetify/styles';
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
@@ -23,11 +24,29 @@ const i18n = createI18n({
   messages: {
     en: {
         changeColor: 'change color',
-        changeLanguage: "change language"
+        changeLanguage: "change language",
+        characters: "Characters",
+        navBar: "Navigation bar",
+        showCharacter: "Display the character",
+        idChar: "character id",
+        allCharacters: "Characters list",
+        species: "species",
+        gender: "gender",
+        name: "name",
+        status: "status"
     },
     fr: {
         changeColor: 'Changer de couleur',
-        changeLanguage: "changer de langue"
+        changeLanguage: "changer de langue",
+        characters: "Personnages",
+        navBar: "Barre de navigation",
+        showCharacter: "Afficher le personnage",
+        idChar: "id du personnage",
+        allCharacters: "Liste des personnages",
+        species: "espèces",
+        gender: "genre",
+        name: "nom",
+        status: "statut"
     }
   }
 })

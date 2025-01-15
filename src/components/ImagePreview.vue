@@ -1,5 +1,5 @@
 <template>
-  <v-img src="S600D.jpg" alt="imprimante S600D"></v-img>
+  <v-img src="rickAndMorty.jpg" alt="image de Rick et Morty"></v-img>
 </template>
 <script>
 

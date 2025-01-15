@@ -1,14 +1,14 @@
 <template>
   <TheAppBar :color="colorStore.color" />
   <v-main>
-    <v-row style="height: 30vh">
+    <v-row style="height: 15vh">
 
     </v-row>
     <v-row>
-      <v-col cols="6" class="text-center">
+      <v-col cols="3" class="text-center">
         <ImagePreview />
       </v-col>
-      <v-col cols="6" class="text-center">
+      <v-col cols="9" class="text-center">
         <ItemDetail @changeColor="setColor" />
       </v-col>
     </v-row>

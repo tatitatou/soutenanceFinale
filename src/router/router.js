@@ -1,23 +1,24 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import TheHomeView from '../views/TheHomeView.vue'
-import TheCartView from '../views/TheCartView.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import TheHomeView from '../views/TheHomeView.vue'; // Assurez-vous que le chemin est correct
+import TheCharacterDetails from '../views/TheCharacterDetails.vue'; // Assurez-vous que le chemin est correct
 
 const routes = [
-	{
-		name: "cart",
-		path: "/cart",
-		component: TheCartView
-	},
-	{
+  {
 		name: "home",
 		path: "/",
 		component: TheHomeView
 	},
-	
-]
-const router = createRouter({
-	history: createWebHistory(),
-	routes
-})
+  {
+    path: "/character/:id", // La route avec l'ID dynamique
+    name: "characterDetails",
+    component: TheCharacterDetails, // Assurez-vous que le composant est bien importé
+    props: true, // Assurez-vous que l'ID est passé en tant que prop
+  },
+];
 
-export default router
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
+
+export default router;
